@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_07bdc8eebcb156e00b983c3b040415ee {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_07bdc8eebcb156e00b983c3b040415ee" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_07bdc8eebcb156e00b983c3b040415ee = L.map(
+                "map_07bdc8eebcb156e00b983c3b040415ee",
+                {
+                    center: [-7.753494297293571, 110.48935612615166],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d5f340385bceccf054a9239212b05db4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_07bdc8eebcb156e00b983c3b040415ee);
+        
+    
+            var heat_map_395d6a89e8e7b5e288cacf66d190dd35 = L.heatLayer(
+                [[-7.751879926, 110.4914618], [-7.78137802, 110.5045877], [-7.77037131, 110.4893966], [-7.806854216, 110.5216291], [-7.783571873, 110.5118513], [-7.740560226, 110.504691], [-7.74840622, 110.5011387], [-7.803765314, 110.4779779], [-7.760833967, 110.4960212]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_07bdc8eebcb156e00b983c3b040415ee);
+        
+    
+            var marker_cluster_01b6c7e6f227a138d210465ec8c8d0ad = L.markerClusterGroup(
+                {}
+            );
+            map_07bdc8eebcb156e00b983c3b040415ee.addLayer(marker_cluster_01b6c7e6f227a138d210465ec8c8d0ad);
+        
+    
+            var marker_c9c88f500a3f6110598e9e8df1b43d8c = L.marker(
+                [-7.751879926, 110.4914618],
+                {}
+            ).addTo(marker_cluster_01b6c7e6f227a138d210465ec8c8d0ad);
+        
+    
+        var popup_4b804538745b944ea5861919127e741a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00c6195115c4b7df0a904fb0f7fc2662 = $(`<div id="html_00c6195115c4b7df0a904fb0f7fc2662" style="width: 100.0%; height: 100.0%;">Candi Prambanan: Jl. Raya Solo - Yogyakarta No.16, Kranggan, Bokoharjo, Kec. Prambanan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55571, Indonesia</div>`)[0];
+                popup_4b804538745b944ea5861919127e741a.setContent(html_00c6195115c4b7df0a904fb0f7fc2662);
+            
+        
+
+        marker_c9c88f500a3f6110598e9e8df1b43d8c.bindPopup(popup_4b804538745b944ea5861919127e741a)
+        ;
+
+        
+    
+    
+            var marker_df7ce41dca7fcce99a0515d1dcde9538 = L.marker(
+                [-7.78137802, 110.5045877],
+                {}
+            ).addTo(marker_cluster_01b6c7e6f227a138d210465ec8c8d0ad);
+        
+    
+        var popup_7cec04e545fad2a1e7247b993558d531 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e8d691da500f6a64bea09536ae2e686 = $(`<div id="html_0e8d691da500f6a64bea09536ae2e686" style="width: 100.0%; height: 100.0%;">Tebing Breksi: Jl. Desa Lengkong, RT.02/RW.17, Gn. Sari, Sambirejo, Kec. Prambanan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55572, Indonesia</div>`)[0];
+                popup_7cec04e545fad2a1e7247b993558d531.setContent(html_0e8d691da500f6a64bea09536ae2e686);
+            
+        
+
+        marker_df7ce41dca7fcce99a0515d1dcde9538.bindPopup(popup_7cec04e545fad2a1e7247b993558d531)
+        ;
+
+        
+    
+    
+            var marker_a0d2062718001e2ffbd3076d9dec9b31 = L.marker(
+                [-7.77037131, 110.4893966],
+                {}
+            ).addTo(marker_cluster_01b6c7e6f227a138d210465ec8c8d0ad);
+        
+    
+        var popup_4d6450cd1c691f72a14eff73778ffb43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1fb0095598ddfaae5d0241eb304901f = $(`<div id="html_d1fb0095598ddfaae5d0241eb304901f" style="width: 100.0%; height: 100.0%;">Candi Ratu Boko: Jl. Raya Piyungan - Prambanan No.2, Gatak, Bokoharjo, Kec. Prambanan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 5572, Indonesia</div>`)[0];
+                popup_4d6450cd1c691f72a14eff73778ffb43.setContent(html_d1fb0095598ddfaae5d0241eb304901f);
+            
+        
+
+        marker_a0d2062718001e2ffbd3076d9dec9b31.bindPopup(popup_4d6450cd1c691f72a14eff73778ffb43)
+        ;
+
+        
+    
+    
+            var marker_ef710bb059bc23e140ebca0780e03aa6 = L.marker(
+                [-7.806854216, 110.5216291],
+                {}
+            ).addTo(marker_cluster_01b6c7e6f227a138d210465ec8c8d0ad);
+        
+    
+        var popup_66c079bca3c834422e58dabaacaaf898 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4a1312d7e0dbb220d79bd510de22c4d = $(`<div id="html_c4a1312d7e0dbb220d79bd510de22c4d" style="width: 100.0%; height: 100.0%;">Obelix Hills Jogja: Klumprit, Blok I & 2, Klumprit II, Wukirharjo, Kec. Prambanan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55572, Indonesia</div>`)[0];
+                popup_66c079bca3c834422e58dabaacaaf898.setContent(html_c4a1312d7e0dbb220d79bd510de22c4d);
+            
+        
+
+        marker_ef710bb059bc23e140ebca0780e03aa6.bindPopup(popup_66c079bca3c834422e58dabaacaaf898)
+        ;
+
+        
+    
+    
+            var marker_daa6dda4347d6c968223ecc2812d44b0 = L.marker(
+                [-7.783571873, 110.5118513],
+                {}
+            ).addTo(marker_cluster_01b6c7e6f227a138d210465ec8c8d0ad);
+        
+    
+        var popup_ec0af481ccc4e309630417d25b957dab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15e62bc67c3b6d520c2f33c99407440c = $(`<div id="html_15e62bc67c3b6d520c2f33c99407440c" style="width: 100.0%; height: 100.0%;">Candi Ijo: Jl. Candi Ijo, Nglengkong, Sambirejo, Kec. Prambanan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55572, Indonesia</div>`)[0];
+                popup_ec0af481ccc4e309630417d25b957dab.setContent(html_15e62bc67c3b6d520c2f33c99407440c);
+            
+        
+
+        marker_daa6dda4347d6c968223ecc2812d44b0.bindPopup(popup_ec0af481ccc4e309630417d25b957dab)
+        ;
+
+        
+    
+    
+            var marker_3fcad65b5b62e7bbaedc80c44013a531 = L.marker(
+                [-7.740560226, 110.504691],
+                {}
+            ).addTo(marker_cluster_01b6c7e6f227a138d210465ec8c8d0ad);
+        
+    
+        var popup_b7e78eee25b51a1dbcdeb375074ae1e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7424dff1bcae9289286bf64ff3089c2 = $(`<div id="html_b7424dff1bcae9289286bf64ff3089c2" style="width: 100.0%; height: 100.0%;">Candi Plaosan: Jl. Candi Plaosan, Plaosan Lor, Bugisan, Kec. Prambanan, Kabupaten Klaten, Jawa Tengah 57454, Indonesia</div>`)[0];
+                popup_b7e78eee25b51a1dbcdeb375074ae1e1.setContent(html_b7424dff1bcae9289286bf64ff3089c2);
+            
+        
+
+        marker_3fcad65b5b62e7bbaedc80c44013a531.bindPopup(popup_b7e78eee25b51a1dbcdeb375074ae1e1)
+        ;
+
+        
+    
+    
+            var marker_687a23d3fe99cfe7089b240b70772e5d = L.marker(
+                [-7.74840622, 110.5011387],
+                {}
+            ).addTo(marker_cluster_01b6c7e6f227a138d210465ec8c8d0ad);
+        
+    
+        var popup_eabbe67b419dd5c3547fca4c3524d0a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30cde0fd7f4e09f6fdca202e89fbcb7e = $(`<div id="html_30cde0fd7f4e09f6fdca202e89fbcb7e" style="width: 100.0%; height: 100.0%;">Tirtonirmolo Waterpark Galuh: Jl. Manisrenggo No.KM 1, Pemuktibaru, Tlogo, Kec. Prambanan, Kabupaten Klaten, Jawa Tengah 57454, Indonesia</div>`)[0];
+                popup_eabbe67b419dd5c3547fca4c3524d0a3.setContent(html_30cde0fd7f4e09f6fdca202e89fbcb7e);
+            
+        
+
+        marker_687a23d3fe99cfe7089b240b70772e5d.bindPopup(popup_eabbe67b419dd5c3547fca4c3524d0a3)
+        ;
+
+        
+    
+    
+            var marker_e1a12063c5cf658b839f53e52f250387 = L.marker(
+                [-7.803765314, 110.4779779],
+                {}
+            ).addTo(marker_cluster_01b6c7e6f227a138d210465ec8c8d0ad);
+        
+    
+        var popup_df495b0c546f61939702df2eec3d5f07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33cd2f29875f625df781c845c7c4f66e = $(`<div id="html_33cd2f29875f625df781c845c7c4f66e" style="width: 100.0%; height: 100.0%;">Goa Pengklik Madurejo: Beloran, Madurejo, Prambanan, Sleman Regency, Special Region of Yogyakarta 55572, Indonesia</div>`)[0];
+                popup_df495b0c546f61939702df2eec3d5f07.setContent(html_33cd2f29875f625df781c845c7c4f66e);
+            
+        
+
+        marker_e1a12063c5cf658b839f53e52f250387.bindPopup(popup_df495b0c546f61939702df2eec3d5f07)
+        ;
+
+        
+    
+    
+            var marker_3e49ec7f3d4ed3e72a87c52be0f51900 = L.marker(
+                [-7.760833967, 110.4960212],
+                {}
+            ).addTo(marker_cluster_01b6c7e6f227a138d210465ec8c8d0ad);
+        
+    
+        var popup_87cbd4845b03dc8b13fb10ad290319b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4df05886d987d33c3bf6354fc11d489 = $(`<div id="html_f4df05886d987d33c3bf6354fc11d489" style="width: 100.0%; height: 100.0%;">Candi Sojiwan: Jl. Banjarsari No.12 RT. 03, RT.03/RW.03, Kwaron, Kb. Dalem Kidul, Kec. Prambanan, Kabupaten Klaten, Jawa Tengah 57454, Indonesia</div>`)[0];
+                popup_87cbd4845b03dc8b13fb10ad290319b8.setContent(html_f4df05886d987d33c3bf6354fc11d489);
+            
+        
+
+        marker_3e49ec7f3d4ed3e72a87c52be0f51900.bindPopup(popup_87cbd4845b03dc8b13fb10ad290319b8)
+        ;
+
+        
+    
+</script>
+</html>

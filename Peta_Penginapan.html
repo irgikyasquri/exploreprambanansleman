@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_025467e14f71a44018fbb47130ba0082 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_025467e14f71a44018fbb47130ba0082" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_025467e14f71a44018fbb47130ba0082 = L.map(
+                "map_025467e14f71a44018fbb47130ba0082",
+                {
+                    center: [-7.774304931842697, 110.49004121035057],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9d090473ff8289a4500bc78d46308570 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_025467e14f71a44018fbb47130ba0082);
+        
+    
+            var heat_map_e6592254aecb0c3c651689f40fc987f9 = L.heatLayer(
+                [[-7.751207762, 110.4848866], [-7.744574086, 110.4902081], [-7.75392924, 110.4969029], [-7.764814975, 110.5030827], [-7.751888133, 110.4859166], [-7.743043223, 110.4955296], [-7.744570119, 110.5003361]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_025467e14f71a44018fbb47130ba0082);
+        
+    
+            var marker_cluster_e25df593aaa190761e5bd4fa2f74b8df = L.markerClusterGroup(
+                {}
+            );
+            map_025467e14f71a44018fbb47130ba0082.addLayer(marker_cluster_e25df593aaa190761e5bd4fa2f74b8df);
+        
+    
+            var marker_bc9cf927bf3db09dddddf446250d0505 = L.marker(
+                [-7.751207762, 110.4848866],
+                {}
+            ).addTo(marker_cluster_e25df593aaa190761e5bd4fa2f74b8df);
+        
+    
+        var popup_40a504d02d7c989026eea2ef36e22293 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cd1cb21788b3b81243bcf9ddea842d7 = $(`<div id="html_9cd1cb21788b3b81243bcf9ddea842d7" style="width: 100.0%; height: 100.0%;">Penginapan Prambanan TRISAN</div>`)[0];
+                popup_40a504d02d7c989026eea2ef36e22293.setContent(html_9cd1cb21788b3b81243bcf9ddea842d7);
+            
+        
+
+        marker_bc9cf927bf3db09dddddf446250d0505.bindPopup(popup_40a504d02d7c989026eea2ef36e22293)
+        ;
+
+        
+    
+    
+            var marker_b7d1083d8733ddb5c73b747ae05c6a9e = L.marker(
+                [-7.744574086, 110.4902081],
+                {}
+            ).addTo(marker_cluster_e25df593aaa190761e5bd4fa2f74b8df);
+        
+    
+        var popup_8828cd29463377041ec3a07dd41709d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c7cea90c3e2f48da6209ad5d443890b = $(`<div id="html_0c7cea90c3e2f48da6209ad5d443890b" style="width: 100.0%; height: 100.0%;">Griya Mahendra</div>`)[0];
+                popup_8828cd29463377041ec3a07dd41709d5.setContent(html_0c7cea90c3e2f48da6209ad5d443890b);
+            
+        
+
+        marker_b7d1083d8733ddb5c73b747ae05c6a9e.bindPopup(popup_8828cd29463377041ec3a07dd41709d5)
+        ;
+
+        
+    
+    
+            var marker_8a7153d5434d46405b7e779805ccd9fe = L.marker(
+                [-7.75392924, 110.4969029],
+                {}
+            ).addTo(marker_cluster_e25df593aaa190761e5bd4fa2f74b8df);
+        
+    
+        var popup_7b2f2f3cb463118dc13f531524049042 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61d932f1ed4124b36ee466a24e38107e = $(`<div id="html_61d932f1ed4124b36ee466a24e38107e" style="width: 100.0%; height: 100.0%;">Homestay Giri Laras</div>`)[0];
+                popup_7b2f2f3cb463118dc13f531524049042.setContent(html_61d932f1ed4124b36ee466a24e38107e);
+            
+        
+
+        marker_8a7153d5434d46405b7e779805ccd9fe.bindPopup(popup_7b2f2f3cb463118dc13f531524049042)
+        ;
+
+        
+    
+    
+            var marker_572275b18b5156b446bb9d258a73ee86 = L.marker(
+                [-7.764814975, 110.5030827],
+                {}
+            ).addTo(marker_cluster_e25df593aaa190761e5bd4fa2f74b8df);
+        
+    
+        var popup_38a829a988f67e9ca284b6fb3fb7cef4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b09bd28e01a68d7900692f03437dabe2 = $(`<div id="html_b09bd28e01a68d7900692f03437dabe2" style="width: 100.0%; height: 100.0%;">Amaranta Prambanan Yogyakarta</div>`)[0];
+                popup_38a829a988f67e9ca284b6fb3fb7cef4.setContent(html_b09bd28e01a68d7900692f03437dabe2);
+            
+        
+
+        marker_572275b18b5156b446bb9d258a73ee86.bindPopup(popup_38a829a988f67e9ca284b6fb3fb7cef4)
+        ;
+
+        
+    
+    
+            var marker_eb7395d40d5b940840db8abd9c0ea86e = L.marker(
+                [-7.751888133, 110.4859166],
+                {}
+            ).addTo(marker_cluster_e25df593aaa190761e5bd4fa2f74b8df);
+        
+    
+        var popup_823f09de12177f8b27ce634347fc9fce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_408d794bff412f5be02e8223083b5be1 = $(`<div id="html_408d794bff412f5be02e8223083b5be1" style="width: 100.0%; height: 100.0%;">LiefLy Prambanan Villa</div>`)[0];
+                popup_823f09de12177f8b27ce634347fc9fce.setContent(html_408d794bff412f5be02e8223083b5be1);
+            
+        
+
+        marker_eb7395d40d5b940840db8abd9c0ea86e.bindPopup(popup_823f09de12177f8b27ce634347fc9fce)
+        ;
+
+        
+    
+    
+            var marker_2c0fd92201241bd59d247805db645ba8 = L.marker(
+                [-7.743043223, 110.4955296],
+                {}
+            ).addTo(marker_cluster_e25df593aaa190761e5bd4fa2f74b8df);
+        
+    
+        var popup_2133a73746488a65b721c57dbb1c810b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3742915782f757b133afb28a2f95fed7 = $(`<div id="html_3742915782f757b133afb28a2f95fed7" style="width: 100.0%; height: 100.0%;">Homestay prambanan village</div>`)[0];
+                popup_2133a73746488a65b721c57dbb1c810b.setContent(html_3742915782f757b133afb28a2f95fed7);
+            
+        
+
+        marker_2c0fd92201241bd59d247805db645ba8.bindPopup(popup_2133a73746488a65b721c57dbb1c810b)
+        ;
+
+        
+    
+    
+            var marker_4b80304b5fe945589e945e0c58c3bc7d = L.marker(
+                [-7.744570119, 110.5003361],
+                {}
+            ).addTo(marker_cluster_e25df593aaa190761e5bd4fa2f74b8df);
+        
+    
+        var popup_1802047d21b4122502ff5caf71b1acc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3096f672c27d2cecfcb6238fc087a4f = $(`<div id="html_b3096f672c27d2cecfcb6238fc087a4f" style="width: 100.0%; height: 100.0%;">Hotel Galuh Prambanan</div>`)[0];
+                popup_1802047d21b4122502ff5caf71b1acc9.setContent(html_b3096f672c27d2cecfcb6238fc087a4f);
+            
+        
+
+        marker_4b80304b5fe945589e945e0c58c3bc7d.bindPopup(popup_1802047d21b4122502ff5caf71b1acc9)
+        ;
+
+        
+    
+</script>
+</html>
